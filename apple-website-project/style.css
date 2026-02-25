@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  left: 200px;
+  
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+nav img {
+  width: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.displayicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  font-size: 13px;
+
+}
+
+.displayicons img {
+  width: 30px;
+}
+
+.page1body {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.page1body h2 {
+  font-size: 60px;
+}
+
+.page1body p {
+  font-weight: bold;
+}
+
+.page1pod1,
+.page1pod2 {
+  width: 200px;
+}
+
+.page1pod1 {
+  position: relative;
+  left: 418px;
+  bottom: 50px;
+}
+
+.page1pod2 {
+  position: relative;
+  left: 545px;
+  bottom: 110px;
+}
+.button1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 300px;
+  gap: 10px;
+  
+}
+.button1 button{
+  background-color: #1877F2;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  
+}
+.button1 a{
+  text-decoration: none;
+  color: #1877F2;
+}
+.page2body {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.page2body h2 {
+  font-size: 150px;
+}
+
+.page2pod1 {
+  width: 340px;
+  position: relative;
+  left: 500px;
+  bottom: 120px;
+}
+
+.button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 300px;
+  gap: 10px;
+  
+}
+.button2 button{
+  background-color: #1877F2;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  
+}
+.button2 a{
+  text-decoration: none;
+  color: #1877F2;
+}
+.finalpage{
+  display: grid;
+  grid-template-columns: repeat(4, 140px);
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  gap: 50px;
+  
+}
+.lastpage img{
+  width: 100px;
+}
+.lasth2{
+  text-align: center;
+  font-size: 40px;
+}
+.finalpage button{
+   background-color: #1877F2;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+}
+.finalpage a{
+  text-decoration: none;
+  color: #1877F2;
+}
+.darkspots{
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  margin: 70px;
+}
+.darkspots img{
+  width: 50px;
+}
+
+/* An.....imati........on */
+.page1body, .button1, .page2body, .button2{
+  animation-name: moving;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.page1pod1, .page1pod2{
+   animation-name: upward;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+}
+.page2pod1{
+     animation-name: upwardpod;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+}
+@keyframes moving {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(0.3);
+  }
+}
+
+@keyframes upward {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.3);
+  }
+}
+
+@keyframes upwardpod {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.3);
+  }
+}
